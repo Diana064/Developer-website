@@ -1,0 +1,94 @@
+.section {
+  padding-top: 28px;
+  .container.hero {
+    position: relative;
+    padding-left: 19px;
+  }
+  .hero {
+    &-img {
+      align-items: center;
+    }
+
+    &-context {
+      padding-top: 309px;
+    }
+    &__title {
+      font-weight: 800;
+      font-size: 27px;
+      line-height: 1.18;
+      text-transform: uppercase;
+      padding-bottom: 22px;
+    }
+    &__text {
+      margin-left: 1px;
+      font-size: 16px;
+      line-height: 1.375;
+      padding-bottom: 34px;
+    }
+    &-button {
+      button {
+        background: var(--green);
+        text-transform: uppercase;
+        color: var(--white-color);
+        border-radius: 10px;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.73;
+        border: none;
+        width: 100%;
+        padding: 17px 0px;
+      }
+    }
+  }
+}
+.go-shopping {
+  &-img {
+    &::after {
+      content: '';
+      width: 26px;
+      height: 26px;
+      z-index: -1;
+      background-image: url('../images/svg/shape\ sphere.264.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      bottom: 384px;
+      right: 24px;
+    }
+  }
+  &__svg {
+    position: absolute;
+    margin-left: -20px;
+  }
+  &__ball {
+    position: absolute;
+    margin-left: -20px;
+  }
+  &::before {
+    content: '';
+    width: 51px;
+    height: 65.95px;
+    background-image: url('../images/svg/Ellipse\ 3.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  &::after {
+    content: '';
+    width: 184px;
+    height: 253px;
+    background-image: url('../images/svg/Ellipse\ 2.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 8px;
+    right: 0;
+    z-index: -1;
+  }
+}
