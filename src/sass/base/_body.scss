@@ -11,3 +11,15 @@ body {
   color: var(--black-color);
   background-color: var(--white-color);
 }
+.button-example {
+  background: var(--green);
+  text-transform: uppercase;
+  color: var(--white-color);
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.73;
+  border: none;
+  width: 100%;
+  padding: 17px 0px;
+}
