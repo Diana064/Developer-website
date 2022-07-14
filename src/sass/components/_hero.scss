@@ -6,6 +6,7 @@
 .container.hero {
   position: relative;
   padding-left: 19px;
+  width: 100%;
 }
 .hero {
   &-img {
@@ -36,7 +37,6 @@
       content: '';
       width: 26px;
       height: 26px;
-      z-index: -1;
       background-image: url('../images/svg/shape\ sphere.264.svg');
       background-position: center;
       background-repeat: no-repeat;
@@ -49,6 +49,7 @@
   &__svg {
     position: absolute;
     margin-left: -20px;
+    z-index: -1;
   }
   &__ball {
     position: absolute;
@@ -71,6 +72,7 @@
     content: '';
     width: 184px;
     height: 253px;
+    z-index: -2;
     background-image: url('../images/svg/Ellipse\ 2.svg');
     background-position: center;
     background-repeat: no-repeat;
@@ -78,6 +80,5 @@
     position: absolute;
     top: 8px;
     right: 0;
-    z-index: -1;
   }
 }

@@ -7,33 +7,25 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-// var swiper = new Swiper('.mySwiper', {
-//   spaceBetween: 30,
-//   slidesPerView: 1,
-//   hashNavigation: {
-//     watchState: true,
-//   },
-
-//   navigation: {
-//     nextEl: '#button-next',
-//     prevEl: '#button-prev',
-//   },
-// });
-// var myswiper = new Swiper('.mySwiper2', {
-//   spaceBetween: 30,
-//   slidesPerView: 1,
-//   hashNavigation: {
-//     watchState: true,
-//   },
-
-//   navigation: {
-//     nextEl: '#swiper-next',
-//     prevEl: '#swiper-prev',
-//   },
-// });
 var slider1 = new Swiper('.mySwiper', {
   spaceBetween: 30,
   slidesPerView: 1,
+  hashNavigation: {
+    watchState: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+var slider1 = new Swiper('.mySwiper3', {
+  spaceBetween: 30,
+  slidesPerView: 2,
   hashNavigation: {
     watchState: true,
   },
@@ -65,3 +57,19 @@ var slider2 = new Swiper('.slider2', {
     el: '.swiper-scrollbar',
   },
 });
+
+(() => {
+  const menuBtnRef = document.querySelector('[data-menu-button]');
+  const mobileMenuRef = document.querySelector('[data-menu]');
+
+  menuBtnRef.addEventListener('click', () => {
+    const expanded =
+      menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
+
+    menuBtnRef.classList.toggle('is-open');
+    document.body.classList.toggle('menu-open');
+    menuBtnRef.setAttribute('aria-expanded', !expanded);
+
+    mobileMenuRef.classList.toggle('is-open');
+  });
+})();

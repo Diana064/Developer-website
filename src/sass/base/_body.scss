@@ -22,4 +22,19 @@ body {
   border: none;
   width: 100%;
   padding: 17px 0px;
+
+  &:hover {
+    border: 2px solid #67aefc;
+  }
+  &:active {
+    background: #67aefc;
+  }
+}
+body.menu-open {
+  overflow: hidden;
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
