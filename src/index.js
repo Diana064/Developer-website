@@ -13,7 +13,8 @@ var slider1 = new Swiper('.mySwiper', {
   hashNavigation: {
     watchState: true,
   },
-
+  loop: true,
+  loopFillGroupWithBlank: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -24,19 +25,13 @@ var slider1 = new Swiper('.mySwiper', {
   },
 });
 var slider1 = new Swiper('.mySwiper3', {
-  spaceBetween: 30,
+  spaceBetween: 25,
   slidesPerView: 2,
-  hashNavigation: {
-    watchState: true,
-  },
-
+  loop: true,
+  loopFillGroupWithBlank: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-  },
-
-  scrollbar: {
-    el: '.swiper-scrollbar',
   },
 });
 
@@ -44,9 +39,8 @@ var slider2 = new Swiper('.slider2', {
   spaceBetween: 30,
   slidesPerView: 1,
 
-  pagination: {
-    el: '.swiper-pagination',
-  },
+  loop: true,
+  loopFillGroupWithBlank: true,
 
   navigation: {
     nextEl: '.swiper-button-next',

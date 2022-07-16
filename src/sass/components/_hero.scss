@@ -1,12 +1,23 @@
 .section.section-hero {
   padding-top: 28px;
   padding-bottom: 51px;
+  @media screen and (min-width: 1920px) {
+    padding-top: 92px;
+    padding-bottom: 41.25px;
+  }
 }
 
 .container.hero {
   position: relative;
   padding-left: 19px;
   width: 100%;
+  @media screen and (min-width: 1920px) {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-left: 375px;
+    padding-right: 171px;
+    gap: 50px;
+  }
 }
 .hero {
   &-img {
@@ -14,7 +25,9 @@
   }
 
   &-context {
-    padding-top: 309px;
+    @media screen and (max-width: 767px) {
+      padding-top: 309px;
+    }
   }
   &__title {
     font-weight: 800;
@@ -22,6 +35,12 @@
     line-height: 1.18;
     text-transform: uppercase;
     padding-bottom: 22px;
+    @media screen and (min-width: 1920px) {
+      font-weight: 900;
+      font-size: 50px;
+      line-height: 1.24;
+      color: #484848;
+    }
   }
   &__text {
     margin-left: 1px;
@@ -29,27 +48,83 @@
     line-height: 1.375;
     padding-bottom: 34px;
   }
+  &-button {
+    @media screen and (min-width: 1920px) {
+      width: 270px;
+    }
+  }
+  &-block {
+    position: relative;
+    &::after {
+      @media screen and (min-width: 1920px) {
+        content: '';
+        width: 171px;
+        height: 63px;
+        background-image: url('../images/svg/Layer\ 9\ copy\ 3.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        bottom: 100px;
+        left: -307.5px;
+      }
+    }
+
+    &::before {
+      @media screen and (min-width: 1920px) {
+        content: '';
+        width: 52.57px;
+        height: 54.2px;
+        background-image: url('../images/svg/shape\ sphere.267.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: -38px;
+        left: -105.43px;
+      }
+    }
+  }
 }
 
 .go-shopping {
+  &__first {
+    @media screen and (min-width: 1920px) {
+      display: none;
+    }
+  }
+  &__second {
+    @media screen and (max-width: 1919px) {
+      display: none;
+    }
+  }
   &-img {
     &::after {
-      content: '';
-      width: 26px;
-      height: 26px;
-      background-image: url('../images/svg/shape\ sphere.264.svg');
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      position: absolute;
-      bottom: 384px;
-      right: 24px;
+      @media screen and (max-width: 1919px) {
+        content: '';
+        width: 26px;
+        height: 26px;
+        background-image: url('../images/svg/shape\ sphere.264.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        bottom: 384px;
+        right: 24px;
+      }
+    }
+    @media screen and (min-width: 1920px) {
+      width: 776px;
+      height: 632.75px;
     }
   }
   &__svg {
-    position: absolute;
-    margin-left: -20px;
-    z-index: -1;
+    width: 100%;
+    @media screen and (max-width: 767px) {
+      position: absolute;
+      margin-left: -20px;
+      z-index: -1;
+    }
   }
   &__ball {
     position: absolute;
@@ -64,10 +139,20 @@
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    top: 0;
-    left: 0;
     z-index: -1;
+    left: 0;
+    @media screen and (max-width: 1919px) {
+      top: 0;
+    }
+    @media screen and (min-width: 1920px) {
+      background-image: url('../images/svg/Ellipse\ 3\ —\ копия.svg');
+      width: 149px;
+      height: 183px;
+      background-position: right;
+      bottom: 41px;
+    }
   }
+
   &::after {
     content: '';
     width: 184px;
@@ -80,5 +165,11 @@
     position: absolute;
     top: 8px;
     right: 0;
+    @media screen and (min-width: 1920px) {
+      background-image: url('../images/svg/Group\ 117.svg');
+      width: 609.5px;
+      height: 548px;
+      background-position: right;
+    }
   }
 }

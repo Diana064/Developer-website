@@ -13,67 +13,75 @@
     padding-bottom: 14.37px;
   }
   .swiper {
-    margin-left: auto;
-    margin-right: auto;
-    position: initial;
-    list-style: none;
-    padding: 0;
-    z-index: 1;
+    display: none;
+    @media screen and (max-width: 1199px) {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      position: initial;
+      list-style: none;
+      padding: 0;
+      z-index: 1;
+    }
   }
   .slider2 {
-    .swiper-slide img {
-      display: block;
-
-      object-fit: cover;
-    }
-    .swiper-slide {
-      &__subtitle {
-        gap: 15px;
-        text-align: left;
-        font-weight: 800;
-        font-size: 17px;
-        line-height: 1.58;
-        text-transform: uppercase;
-      }
-      &__text {
-        text-align: left;
-        font-size: 17px;
-        line-height: 1.76;
-      }
-    }
-    .swiper-button-next,
-    .swiper-button-prev {
-      width: 60px;
-      height: 60px;
-      justify-content: center;
-      align-items: center;
+    display: none;
+    @media screen and (max-width: 1199px) {
       display: flex;
-      position: absolute;
-      top: 945px;
-      color: black;
-      padding: 18px 22px 18px 26px;
-      border: 2px solid #67aefc;
-      border-radius: 15px;
-    }
-    .swiper-button-next:hover,
-    .swiper-button-prev:hover {
-      background-color: var(--blue);
-      color: white;
-    }
-    .swiper-button-next:after,
-    .swiper-button-prev:after {
-      font-size: 24px;
-      width: 12px;
-      height: 24px;
-      align-items: center;
-    }
-    .swiper-button-prev {
-      left: 74px;
-      right: auto;
-    }
-    .swiper-button-next {
-      right: 74px;
-      left: auto;
+      .swiper-slide img {
+        display: block;
+
+        object-fit: cover;
+      }
+      .swiper-slide {
+        &__subtitle {
+          gap: 15px;
+          text-align: left;
+          font-weight: 800;
+          font-size: 17px;
+          line-height: 1.58;
+          text-transform: uppercase;
+        }
+        &__text {
+          text-align: left;
+          font-size: 17px;
+          line-height: 1.76;
+        }
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        width: 60px;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: absolute;
+        top: 945px;
+        color: black;
+        padding: 18px 22px 18px 26px;
+        border: 2px solid #67aefc;
+        border-radius: 15px;
+      }
+      .swiper-button-next:hover,
+      .swiper-button-prev:hover {
+        background-color: var(--blue);
+        color: white;
+      }
+      .swiper-button-next:after,
+      .swiper-button-prev:after {
+        font-size: 24px;
+        width: 12px;
+        height: 24px;
+        align-items: center;
+      }
+      .swiper-button-prev {
+        left: 74px;
+        right: auto;
+      }
+      .swiper-button-next {
+        right: 74px;
+        left: auto;
+      }
     }
   }
   .portfolio-list {

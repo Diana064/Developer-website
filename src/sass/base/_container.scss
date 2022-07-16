@@ -20,4 +20,9 @@
     padding-right: 16px;
     width: 1200px;
   }
+  @media screen and (min-width: 1920px) {
+    padding-left: 375px;
+    padding-right: 375px;
+    width: 1920px;
+  }
 }

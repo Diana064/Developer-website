@@ -14,6 +14,11 @@
     padding-bottom: 5px;
     display: flex;
     align-items: center;
+    @media screen and (min-width: 1920px) {
+      margin-left: 0px;
+      padding-top: 18px;
+      padding-bottom: 18px;
+    }
   }
   &-button {
     display: none;
@@ -49,6 +54,10 @@
 .logo {
   width: 136px;
   height: 35px;
+  @media screen and (min-width: 1920px) {
+    width: 242px;
+    height: 59px;
+  }
 }
 .dot {
   &-icon {
@@ -77,6 +86,12 @@
       text-transform: capitalize;
       padding: 26px 0px;
     }
+    @media screen and (min-width: 1920px) {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.25;
+      padding: 37px 0;
+    }
   }
 }
 .button-header {
@@ -92,6 +107,11 @@
       background: #ffffff;
       color: #67aefc;
     }
+  }
+  @media screen and (min-width: 1920px) {
+    margin: 28px 0;
+    padding: 0px 42px;
+    font-size: 15px;
   }
 }
 .navigation {
