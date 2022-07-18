@@ -5,39 +5,41 @@
       <h3 class="discussion__subtitle">
         Расскажите о своих бизнес-целях и мы поможем вам в их достижении
       </h3>
-      <div class="discussion-form form">
-        <label class="form__label">
-          <input
-            maxlength="32"
-            pattern="[A-Za-z]{1,32}"
-            required
-            class="form__input"
-            type="text"
-            name="name"
-            placeholder="Имя"
-          />
-        </label>
-        <label class="form__label">
-          <input
-            pattern="[A-Za-z]{1,32}"
-            required
-            class="form__input"
-            type="text"
-            name="name"
-            placeholder="Telegram/Viber"
-          />
-        </label>
-        <label class="form__label">
-          <input
-            class="form__input"
-            type="email"
-            name="name"
-            placeholder="Email"
-            multiple
-          />
-        </label>
-      </div>
-      <button class="button-example" type="button">Отправить</button>
+      <form action="#" class="discussion-form">
+        <div class="form">
+          <label class="form__label">
+            <input
+              maxlength="32"
+              pattern="[A-Za-z]{1,32}"
+              required
+              class="form__input"
+              type="text"
+              name="name"
+              placeholder="Имя"
+            />
+          </label>
+          <label class="form__label">
+            <input
+              pattern="[A-Za-z]{1,32}"
+              required
+              class="form__input"
+              type="text"
+              name="name"
+              placeholder="Telegram/Viber"
+            />
+          </label>
+          <label class="form__label">
+            <input
+              class="form__input"
+              type="email"
+              name="name"
+              placeholder="Email"
+              multiple
+            />
+          </label>
+        </div>
+        <button class="button-example" type="button">Отправить</button>
+      </form>
     </div>
     <img
       loading="lazy"
