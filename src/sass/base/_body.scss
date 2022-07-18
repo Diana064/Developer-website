@@ -29,9 +29,16 @@ body {
   &:active {
     background: #67aefc;
   }
-
+  @media screen and (min-width: 500px) {
+    width: 400px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 200px;
+    padding: 10px 0px;
+  }
   @media screen and (min-width: 1920px) {
     width: 270px;
+    padding: 17px 0px;
   }
 }
 body.menu-open {

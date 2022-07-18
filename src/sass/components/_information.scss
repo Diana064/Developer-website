@@ -1,6 +1,12 @@
 .section-information {
-  padding-top: 43px;
-  padding-bottom: 50px;
+  @media screen and (min-width: 375px) {
+    padding-top: 43px;
+    padding-bottom: 50px;
+  }
+  @media screen and (min-width: 375px) {
+    padding-top: 60px;
+    padding-bottom: 75px;
+  }
   @media screen and (min-width: 1920px) {
     padding-top: 137px;
     padding-bottom: 104px;
@@ -10,26 +16,36 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1200px) {
     flex-direction: row;
+  }
+  @media screen and (min-width: 1920px) {
     padding-right: 145px;
     gap: 38px;
-    &::before {
+  }
+  &::before {
+    @media screen and (min-width: 1200px) {
       content: '';
       position: absolute;
       background-image: url('../images/svg/shape\ sphere.267.svg');
       background-repeat: no-repeat;
+      width: 30px;
+      height: 30px;
+      top: 42px;
+      background-size: contain;
+      left: 182px;
+    }
+    @media screen and (min-width: 1920px) {
       width: 58px;
       height: 58px;
       top: 42px;
-      background-size: contain;
       left: 182px;
     }
   }
 }
 .information {
   &-block {
-    @media screen and (min-width: 1920px) {
+    @media screen and (min-width: 1200px) {
       display: flex;
       flex-direction: column;
     }
@@ -41,11 +57,16 @@
     text-align: center;
     margin-bottom: 27px;
     margin-top: 79px;
+    @media screen and (min-width: 1200px) {
+      font-size: 28px;
+      line-height: 1.25;
+      margin-bottom: 35px;
+      text-align: left;
+    }
+
     @media screen and (min-width: 1920px) {
       font-size: 32px;
-      line-height: 1.25;
       margin-bottom: 53px;
-      text-align: left;
     }
   }
   &__text {
@@ -69,13 +90,19 @@
 
   .hidden {
     display: flex;
-    @media screen and (max-width: 1919px) {
+    @media screen and (max-width: 1199px) {
       display: none;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 450px;
+    }
+    @media screen and (min-width: 1920px) {
+      width: 689.51px;
     }
   }
   .visible {
     display: none;
-    @media screen and (max-width: 1919px) {
+    @media screen and (max-width: 1199px) {
       display: flex;
     }
   }

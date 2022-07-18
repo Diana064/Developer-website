@@ -7,9 +7,9 @@
 }
 .container.discussion {
   position: relative;
-  @media screen and (min-width: 1920px) {
-    padding-right: 766px;
-    padding-left: 675px;
+  @media screen and (min-width: 1200px) {
+    padding-right: 400px;
+    padding-left: 400px;
     &::before {
       content: '';
       position: absolute;
@@ -19,7 +19,7 @@
       height: 268.03px;
       bottom: 45px;
       background-size: cover;
-      left: 335px;
+      left: 100px;
       background-position: center;
     }
     &::after {
@@ -30,6 +30,19 @@
       width: 184px;
       height: 144.42px;
       background-size: contain;
+      top: 100px;
+      right: 150px;
+    }
+  }
+  @media screen and (min-width: 1920px) {
+    padding-right: 766px;
+    padding-left: 675px;
+    &::before {
+      bottom: 45px;
+
+      left: 335px;
+    }
+    &::after {
       top: 109px;
       right: 405px;
     }
@@ -81,7 +94,7 @@
     margin-top: 42px;
     margin-right: auto;
     margin-left: auto;
-    @media screen and (min-width: 1920px) {
+    @media screen and (min-width: 1200px) {
       display: none;
     }
   }

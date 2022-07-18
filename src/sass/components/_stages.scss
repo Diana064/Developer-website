@@ -259,6 +259,9 @@
         display: flex;
         justify-content: center;
         gap: 107px;
+        @media screen and (min-width: 1920px) {
+          gap: 30px;
+        }
       }
       .swiper-button-next,
       .swiper-button-prev {

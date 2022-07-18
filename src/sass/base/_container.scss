@@ -8,10 +8,19 @@
   @include mq(mobile-iphone) {
     width: 375px;
   }
-
+  @media screen and (min-width: 500px) {
+    width: 500px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media screen and (min-width: 700px) {
+    width: 700px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
   @include mq(tablet) {
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 80px;
+    padding-right: 80px;
     width: 768px;
   }
 
