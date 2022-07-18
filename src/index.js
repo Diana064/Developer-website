@@ -1,3 +1,4 @@
+//acordeon for services section
 var acc = document.getElementsByClassName('services-item__content');
 var i;
 
@@ -7,6 +8,7 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+// slider
 var slider1 = new Swiper('.mySwiper', {
   spaceBetween: 30,
   slidesPerView: 1,
@@ -51,6 +53,8 @@ var slider2 = new Swiper('.slider2', {
     el: '.swiper-scrollbar',
   },
 });
+
+// open/close header-menu mobile version
 
 (() => {
   const menuBtnRef = document.querySelector('[data-menu-button]');
