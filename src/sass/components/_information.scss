@@ -49,6 +49,11 @@
       display: flex;
       flex-direction: column;
     }
+    @media screen and (max-width: 1199px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__subtitle {
     font-weight: 800;
@@ -73,6 +78,9 @@
     margin-left: 1px;
     margin-right: -1px;
     margin-bottom: 36px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      text-align: center;
+    }
     @media screen and (min-width: 1920px) {
       font-size: 18px;
       line-height: 1.38;
