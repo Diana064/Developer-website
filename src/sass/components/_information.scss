@@ -1,9 +1,38 @@
 .section-information {
   padding-top: 43px;
   padding-bottom: 50px;
+  @media screen and (min-width: 1920px) {
+    padding-top: 137px;
+    padding-bottom: 104px;
+  }
+}
+.container.information {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  @media screen and (min-width: 1920px) {
+    flex-direction: row;
+    padding-right: 145px;
+    gap: 38px;
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url('../images/svg/shape\ sphere.267.svg');
+      background-repeat: no-repeat;
+      width: 58px;
+      height: 58px;
+      top: 42px;
+      background-size: contain;
+      left: 182px;
+    }
+  }
 }
 .information {
   &-block {
+    @media screen and (min-width: 1920px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
   &__subtitle {
     font-weight: 800;
@@ -11,18 +40,43 @@
     line-height: 1.39;
     text-align: center;
     margin-bottom: 27px;
+    margin-top: 79px;
+    @media screen and (min-width: 1920px) {
+      font-size: 32px;
+      line-height: 1.25;
+      margin-bottom: 53px;
+      text-align: left;
+    }
   }
   &__text {
     margin-left: 1px;
     margin-right: -1px;
     margin-bottom: 36px;
+    @media screen and (min-width: 1920px) {
+      font-size: 18px;
+      line-height: 1.38;
+      margin-bottom: 45px;
+    }
   }
   &__image {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 29px;
+    @media screen and (min-width: 1920px) {
+      margin-bottom: 0px;
+    }
   }
-}
-.hidden {
-  display: none;
+
+  .hidden {
+    display: flex;
+    @media screen and (max-width: 1919px) {
+      display: none;
+    }
+  }
+  .visible {
+    display: none;
+    @media screen and (max-width: 1919px) {
+      display: flex;
+    }
+  }
 }

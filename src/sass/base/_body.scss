@@ -29,6 +29,10 @@ body {
   &:active {
     background: #67aefc;
   }
+
+  @media screen and (min-width: 1920px) {
+    width: 270px;
+  }
 }
 body.menu-open {
   overflow: hidden;

@@ -1,6 +1,9 @@
 .section.section-hero {
-  padding-top: 28px;
-  padding-bottom: 51px;
+  @media screen and (max-width: 1199px) {
+    padding-top: 28px;
+    padding-bottom: 51px;
+  }
+
   @media screen and (min-width: 1920px) {
     padding-top: 92px;
     padding-bottom: 41.25px;
@@ -11,9 +14,13 @@
   position: relative;
   padding-left: 19px;
   width: 100%;
-  @media screen and (min-width: 1920px) {
+  gap: 20px;
+  @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: row-reverse;
+    padding-left: 120px;
+  }
+  @media screen and (min-width: 1920px) {
     padding-left: 375px;
     padding-right: 171px;
     gap: 50px;
@@ -22,6 +29,9 @@
 .hero {
   &-img {
     align-items: center;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
   }
 
   &-context {
@@ -35,11 +45,14 @@
     line-height: 1.18;
     text-transform: uppercase;
     padding-bottom: 22px;
-    @media screen and (min-width: 1920px) {
+    @media screen and (min-width: 1200px) {
       font-weight: 900;
-      font-size: 50px;
+      font-size: 27px;
       line-height: 1.24;
       color: #484848;
+    }
+    @media screen and (min-width: 1920px) {
+      font-size: 50px;
     }
   }
   &__text {
@@ -49,14 +62,14 @@
     padding-bottom: 34px;
   }
   &-button {
-    @media screen and (min-width: 1920px) {
+    @media screen and (min-width: 1200px) {
       width: 270px;
     }
   }
   &-block {
     position: relative;
     &::after {
-      @media screen and (min-width: 1920px) {
+      @media screen and (min-width: 1200px) {
         content: '';
         width: 171px;
         height: 63px;
@@ -89,18 +102,18 @@
 
 .go-shopping {
   &__first {
-    @media screen and (min-width: 1920px) {
+    @media screen and (min-width: 1200px) {
       display: none;
     }
   }
   &__second {
-    @media screen and (max-width: 1919px) {
+    @media screen and (max-width: 1199px) {
       display: none;
     }
   }
   &-img {
     &::after {
-      @media screen and (max-width: 1919px) {
+      @media screen and (max-width: 1199px) {
         content: '';
         width: 26px;
         height: 26px;
@@ -113,9 +126,13 @@
         right: 24px;
       }
     }
-    @media screen and (min-width: 1920px) {
+    @media screen and (min-width: 1200px) {
       width: 776px;
       height: 632.75px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 400px;
+      height: auto;
     }
   }
   &__svg {
@@ -141,15 +158,18 @@
     position: absolute;
     z-index: -1;
     left: 0;
-    @media screen and (max-width: 1919px) {
+    @media screen and (max-width: 1199px) {
       top: 0;
     }
-    @media screen and (min-width: 1920px) {
+    @media screen and (min-width: 1200px) {
       background-image: url('../images/svg/Ellipse\ 3\ —\ копия.svg');
-      width: 149px;
+      width: 100px;
       height: 183px;
       background-position: right;
       bottom: 41px;
+    }
+    @media screen and (min-width: 1920px) {
+      width: 149px;
     }
   }
 
@@ -165,6 +185,12 @@
     position: absolute;
     top: 8px;
     right: 0;
+    @media screen and (min-width: 1200px) {
+      background-image: url('../images/svg/Group\ 117.svg');
+      width: 300px;
+      height: 300px;
+      background-position: right;
+    }
     @media screen and (min-width: 1920px) {
       background-image: url('../images/svg/Group\ 117.svg');
       width: 609.5px;

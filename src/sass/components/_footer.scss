@@ -1,6 +1,10 @@
 .section-footer {
   background-color: var(--blue);
   padding-bottom: 149px;
+  @media screen and (min-width: 1920px) {
+    padding-top: 101px;
+    padding-bottom: 79px;
+  }
 }
 .footer {
   &-logo {
@@ -62,7 +66,6 @@
     color: var(--white-color);
     font-size: 16px;
     line-height: 1.375;
-    /* or 22px */
   }
   &-tel {
     color: var(--white-color);
@@ -74,5 +77,73 @@
   &__icon {
     width: 33px;
     height: 25px;
+  }
+}
+.first-block {
+  display: flex;
+  @media screen and (min-width: 1920px) {
+    display: none;
+  }
+}
+.second-block {
+  display: none;
+  @media screen and (min-width: 1920px) {
+    display: flex;
+
+    flex-direction: column;
+  }
+  .footer {
+    &-content {
+      display: flex;
+      margin-bottom: 121px;
+    }
+    &-kontact {
+      justify-content: flex-start;
+    }
+    &-main {
+      display: flex;
+      flex-direction: column;
+    }
+    &-logo {
+      margin-left: 0;
+      margin-right: 0;
+      height: 66px;
+    }
+    &-link {
+      gap: 38.43px;
+      margin-top: 45px;
+      margin-bottom: 0;
+      margin-left: 0;
+    }
+    &-site {
+      margin-top: 25px;
+    }
+    &-website {
+      margin-left: 0;
+      font-size: 20px;
+      line-height: 1.2;
+    }
+    &-text {
+      margin-top: 0;
+      margin-left: auto;
+      font-size: 18px;
+      line-height: 1.77;
+    }
+  }
+  .kontact {
+    &-list {
+      gap: 13px;
+      margin-top: 25px;
+    }
+    &-name {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+  }
+  .link {
+    &__icon {
+      width: 25px;
+      height: 25px;
+    }
   }
 }
