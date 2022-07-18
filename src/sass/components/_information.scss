@@ -27,17 +27,21 @@
     @media screen and (min-width: 1200px) {
       content: '';
       position: absolute;
-      background-image: url('../images/svg/shape\ sphere.267.svg');
-      background-repeat: no-repeat;
+
       width: 30px;
       height: 30px;
-      top: 42px;
+
+      background-image: url('../images/svg/shape\ sphere.267.svg');
+      background-repeat: no-repeat;
       background-size: contain;
+
+      top: 42px;
       left: 182px;
     }
     @media screen and (min-width: 1920px) {
       width: 58px;
       height: 58px;
+
       top: 42px;
       left: 182px;
     }
@@ -56,17 +60,21 @@
     }
   }
   &__subtitle {
-    font-weight: 800;
-    font-size: 23px;
-    line-height: 1.39;
-    text-align: center;
     margin-bottom: 27px;
     margin-top: 79px;
+
+    font-size: 23px;
+    font-weight: 800;
+    line-height: 1.39;
+
+    text-align: center;
+
     @media screen and (min-width: 1200px) {
+      text-align: left;
+      margin-bottom: 35px;
+
       font-size: 28px;
       line-height: 1.25;
-      margin-bottom: 35px;
-      text-align: left;
     }
 
     @media screen and (min-width: 1920px) {
@@ -82,9 +90,10 @@
       text-align: center;
     }
     @media screen and (min-width: 1920px) {
+      margin-bottom: 45px;
+
       font-size: 18px;
       line-height: 1.38;
-      margin-bottom: 45px;
     }
   }
   &__image {

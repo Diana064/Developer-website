@@ -14,18 +14,22 @@
     @media screen and (min-width: 1200px) {
       content: '';
       position: absolute;
-      background-image: url('../images/svg/shape\ sphere.269.svg');
-      background-repeat: no-repeat;
+
       width: 67.39px;
       height: 67.39px;
-      top: -47px;
+
+      background-image: url('../images/svg/shape\ sphere.269.svg');
+      background-repeat: no-repeat;
       background-size: cover;
+
+      top: -47px;
       left: 217px;
       z-index: -1;
     }
     @media screen and (min-width: 1920px) {
       width: 67.39px;
       height: 67.39px;
+
       top: -47px;
       left: 217px;
     }
@@ -34,11 +38,14 @@
     @media screen and (min-width: 1200px) {
       content: '';
       position: absolute;
-      background-image: url('../images/svg/shape\ wave.257\ copy.svg');
-      background-repeat: no-repeat;
+
       width: 170px;
       height: 70px;
+
+      background-image: url('../images/svg/shape\ wave.257\ copy.svg');
+      background-repeat: no-repeat;
       background-size: contain;
+
       bottom: -12px;
       right: 271px;
       z-index: -1;
@@ -65,19 +72,22 @@
     position: relative;
 
     &__title {
-      text-align: center;
-      font-weight: 800;
-      font-size: 23px;
-      line-height: 1.47;
       margin-bottom: 27px;
+
+      text-align: center;
+
+      font-size: 23px;
+      font-weight: 800;
+      line-height: 1.47;
       @media screen and (min-width: 1200px) {
         margin-bottom: 50px;
         font-size: 28px;
       }
       @media screen and (min-width: 1920px) {
+        margin-bottom: 84px;
+
         font-size: 32px;
         line-height: 1.25;
-        margin-bottom: 84px;
       }
     }
     @media screen and (max-width: 767px) {
@@ -103,23 +113,28 @@
           }
         }
         .swiper-slide {
-          height: 615px;
-          border: 2px solid var(--blue);
-          border-radius: 15px;
-          padding-top: 27px;
-          padding-left: 29px;
-          padding-right: 33px;
           display: flex;
           flex-direction: column;
           align-items: center;
+
+          padding-top: 27px;
+          padding-left: 29px;
+          padding-right: 33px;
+
+          height: 615px;
+
+          border: 2px solid var(--blue);
+          border-radius: 15px;
+
           @media screen and (max-width: 375px) {
             height: 550px;
           }
 
           &__subtitle {
             text-align: left;
-            font-weight: 800;
+
             font-size: 17px;
+            font-weight: 800;
             line-height: 1.58;
             text-transform: uppercase;
           }
@@ -165,20 +180,25 @@
       .swiper-button {
         display: flex;
         justify-content: center;
-        gap: 107px;
+
         margin-top: 25px;
+        gap: 107px;
       }
       .swiper-button-next,
       .swiper-button-prev {
-        width: 60px;
-        height: 60px;
+        display: flex;
         justify-content: center;
         align-items: center;
-        display: flex;
+
+        width: 60px;
+        height: 60px;
+
         position: absolute;
+        padding: 18px 22px 18px 26px;
+
         top: 755px;
         color: black;
-        padding: 18px 22px 18px 26px;
+
         border: 2px solid #67aefc;
         border-radius: 15px;
         @media screen and (max-width: 375px) {
@@ -192,10 +212,12 @@
       }
       .swiper-button-next:after,
       .swiper-button-prev:after {
-        font-size: 24px;
+        align-items: center;
+
         width: 12px;
         height: 24px;
-        align-items: center;
+
+        font-size: 24px;
       }
       .swiper-button-prev {
         left: 74px;
@@ -225,25 +247,33 @@
       }
 
       .swiper-slide {
+        display: flex;
+
+        width: 467.5px;
+        height: 389px;
+
         text-align: center;
         font-size: 15px;
         line-height: 1.38;
+
         background: #fff;
-        width: 467.5px;
-        height: 389px;
-        display: flex;
+
         @media screen and (min-width: 768px) and (max-width: 1200px) {
           flex-direction: column;
-          height: 500px;
           align-items: center;
+
+          height: 500px;
+
           padding-left: 20px;
           padding-right: 20px;
         }
+        padding-left: 35px;
+
         justify-content: center;
         align-items: start;
+
         border: 2px solid #67aefc;
         border-radius: 15px;
-        padding-left: 35px;
 
         &:nth-child(1) {
           gap: 36px;
@@ -263,8 +293,8 @@
         }
         @media screen and (min-width: 1920px) {
           width: 672px;
-          font-size: 18px;
           padding-left: 63px;
+          font-size: 18px;
         }
       }
       .swiper-picture {
@@ -272,8 +302,10 @@
       }
       .swiper-slide img {
         display: block;
+
         width: 100%;
         height: 100%;
+
         object-fit: cover;
 
         @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -311,15 +343,19 @@
       }
       .swiper-button-next,
       .swiper-button-prev {
-        width: 60px;
-        height: 60px;
+        display: flex;
         justify-content: center;
         align-items: center;
-        display: flex;
+
+        width: 60px;
+        height: 60px;
+
         position: relative;
+        padding: 18px 22px 18px 26px;
+
         top: 0px;
         color: black;
-        padding: 18px 22px 18px 26px;
+
         border: 2px solid #67aefc;
         border-radius: 15px;
       }
@@ -330,10 +366,12 @@
       }
       .swiper-button-next:after,
       .swiper-button-prev:after {
-        font-size: 24px;
         width: 12px;
         height: 24px;
+
         align-items: center;
+
+        font-size: 24px;
       }
       .swiper-button-prev {
         left: 0;
@@ -348,6 +386,7 @@
           padding-top: 76px;
           padding-right: 33px;
           padding-bottom: 63px;
+
           width: 250px;
           height: 250px;
         }
@@ -355,6 +394,7 @@
           padding-top: 100px;
           padding-right: 60px;
           padding-bottom: 69px;
+
           width: 227px;
           height: 222px;
         }
@@ -362,6 +402,7 @@
           padding-top: 42px;
           padding-right: 37px;
           padding-bottom: 36px;
+
           width: 250px;
           height: 253px;
           transform: rotate(15.72deg);
@@ -370,6 +411,7 @@
           padding-top: 104px;
           padding-right: 58px;
           padding-bottom: 82px;
+
           width: 250px;
           height: 205.1px;
         }
@@ -377,6 +419,7 @@
           padding-top: 57px;
           padding-right: 14px;
           padding-bottom: 47px;
+
           width: 277.45px;
           height: 287.44px;
         }

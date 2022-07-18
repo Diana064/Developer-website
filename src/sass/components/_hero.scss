@@ -16,8 +16,8 @@
 
 .container.hero {
   position: relative;
-  padding-left: 19px;
   width: 100%;
+  padding-left: 19px;
   gap: 20px;
   @media screen and (min-width: 500px) {
     padding-left: 40px;
@@ -33,9 +33,9 @@
     padding-right: 180px;
   }
   @media screen and (min-width: 1600px) {
-    gap: 20px;
     padding-left: 301px;
     padding-right: 280px;
+    gap: 20px;
   }
   @media screen and (min-width: 1920px) {
     padding-left: 375px;
@@ -64,11 +64,13 @@
     }
   }
   &__title {
-    font-weight: 800;
-    font-size: 27px;
-    line-height: 1.18;
-    text-transform: uppercase;
     padding-bottom: 22px;
+
+    font-size: 27px;
+    font-weight: 800;
+    line-height: 1.18;
+
+    text-transform: uppercase;
     @media screen and (max-width: 374px) {
       font-size: 21px;
     }
@@ -76,8 +78,8 @@
       color: #484848;
     }
     @media screen and (min-width: 1200px) {
-      font-weight: 900;
       font-size: 40px;
+      font-weight: 900;
       line-height: 1.24;
     }
     @media screen and (min-width: 1920px) {
@@ -86,9 +88,11 @@
   }
   &__text {
     margin-left: 1px;
+    padding-bottom: 34px;
+
     font-size: 16px;
     line-height: 1.375;
-    padding-bottom: 34px;
+
     @media screen and (max-width: 374px) {
       font-size: 11px;
     }
@@ -117,13 +121,16 @@
     &::after {
       @media screen and (min-width: 1200px) {
         content: '';
+        position: absolute;
+
         width: 171px;
         height: 63px;
+
         background-image: url('../images/svg/Layer\ 9\ copy\ 3.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
-        position: absolute;
+
         bottom: 100px;
         left: -307.5px;
       }
@@ -132,13 +139,16 @@
     &::before {
       @media screen and (min-width: 1920px) {
         content: '';
+        position: absolute;
+
         width: 52.57px;
         height: 54.2px;
+
         background-image: url('../images/svg/shape\ sphere.267.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
-        position: absolute;
+
         top: -38px;
         left: -105.43px;
       }
@@ -174,15 +184,19 @@
     &::after {
       @media screen and (max-width: 1199px) {
         content: '';
+        position: absolute;
+
         width: 26px;
         height: 26px;
+
         background-image: url('../images/svg/shape\ sphere.264.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
-        position: absolute;
+
         bottom: 384px;
         right: 24px;
+
         z-index: -3;
       }
     }
@@ -225,23 +239,28 @@
   }
   &::before {
     content: '';
+    position: absolute;
+
     width: 51px;
     height: 65.95px;
+
     background-image: url('../images/svg/Ellipse\ 3.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    position: absolute;
+
     z-index: -1;
     left: 0;
     @media screen and (max-width: 1199px) {
       top: 0;
     }
     @media screen and (min-width: 1200px) {
-      background-image: url('../images/svg/Ellipse\ 3\ —\ копия.svg');
       width: 100px;
       height: 183px;
+
       background-position: right;
+      background-image: url('../images/svg/Ellipse\ 3\ —\ копия.svg');
+
       bottom: 41px;
     }
     @media screen and (min-width: 1920px) {
@@ -251,27 +270,35 @@
 
   &::after {
     content: '';
+    position: absolute;
+
     width: 184px;
     height: 253px;
+
     z-index: -2;
     background-image: url('../images/svg/Ellipse\ 2.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    position: absolute;
+
     top: 8px;
     right: 0;
+
+    z-index: -2;
     @media screen and (min-width: 1200px) {
-      background-image: url('../images/svg/Group\ 117.svg');
       width: 300px;
       height: 300px;
+
       background-position: right;
+      background-image: url('../images/svg/Group\ 117.svg');
+
       top: -10px;
     }
     @media screen and (min-width: 1920px) {
-      background-image: url('../images/svg/Group\ 117.svg');
       width: 609.5px;
       height: 548px;
+
+      background-image: url('../images/svg/Group\ 117.svg');
       background-position: right;
     }
   }

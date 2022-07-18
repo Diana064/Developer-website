@@ -1,11 +1,11 @@
 <section class="section section-discussion" id="discussion">
   <div class="container discussion">
-    <div class="discussion-block">
+    <div class="discussion-block" onload="document.form1.text1.focus()">
       <h2 class="discussion__title">Обсудить проект</h2>
       <h3 class="discussion__subtitle">
         Расскажите о своих бизнес-целях и мы поможем вам в их достижении
       </h3>
-      <form action="#" class="discussion-form">
+      <form action="#" class="discussion-form" name="form1">
         <div class="form">
           <label class="form__label">
             <input
@@ -15,6 +15,7 @@
               class="form__input"
               type="text"
               name="name"
+              id="name"
               placeholder="Имя"
             />
           </label>
@@ -24,7 +25,7 @@
               required
               class="form__input"
               type="text"
-              name="name"
+              name="viber"
               placeholder="Telegram/Viber"
             />
           </label>
@@ -32,13 +33,21 @@
             <input
               class="form__input"
               type="email"
-              name="name"
+              name="text1"
               placeholder="Email"
               multiple
             />
           </label>
         </div>
-        <button class="button-example" type="button">Отправить</button>
+        <button
+          class="button-example"
+          type="button"
+          name="validate"
+          value="Validate"
+          onclick="ValidateEmail(document.form1.text1)"
+        >
+          Отправить
+        </button>
       </form>
     </div>
     <img
