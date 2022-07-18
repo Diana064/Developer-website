@@ -1,4 +1,4 @@
-<section class="section section-discussion">
+<section class="section section-discussion" id="discussion">
   <div class="container discussion">
     <div class="discussion-block">
       <h2 class="discussion__title">Обсудить проект</h2>
@@ -8,6 +8,9 @@
       <div class="discussion-form form">
         <label class="form__label">
           <input
+            maxlength="32"
+            pattern="[A-Za-z]{1,32}"
+            required
             class="form__input"
             type="text"
             name="name"
@@ -16,6 +19,8 @@
         </label>
         <label class="form__label">
           <input
+            pattern="[A-Za-z]{1,32}"
+            required
             class="form__input"
             type="text"
             name="name"
@@ -25,14 +30,20 @@
         <label class="form__label">
           <input
             class="form__input"
-            type="text"
+            type="email"
             name="name"
             placeholder="Email"
+            multiple
           />
         </label>
       </div>
       <button class="button-example" type="button">Отправить</button>
     </div>
-    <img class="discussion__img" src="./images/svg/Postpaid.svg" />
+    <img
+      loading="lazy"
+      alt="телефон"
+      class="discussion__img"
+      src="./images/svg/Postpaid.svg"
+    />
   </div>
 </section>

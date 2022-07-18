@@ -8,6 +8,7 @@
     <button class="header-button dot" data-menu-button>
       <svg class="dot-icon">
         <use
+          aria-label="Кнопка мобільного меню"
           class="dot-svg"
           href="./images/symbol-defs.svg#icon-dot-fill-none"
         ></use>
@@ -15,23 +16,27 @@
       <svg class="dot-icon">
         <use
           class="dot-svg"
+          aria-label="Кнопка мобільного меню"
           href="./images/symbol-defs.svg#icon-dot-fill-none"
         ></use>
       </svg>
       <svg class="dot-icon">
         <use
+          aria-label="Кнопка мобільного меню"
           class="dot-svg"
           href="./images/symbol-defs.svg#icon-dot-fill-none"
         ></use>
       </svg>
-      <svg class="close-icon">
+      <svg class="close-icon" aria-label="Кнопка мобільного меню">
         <use class="close-svg" href="./images/symbol-defs.svg#icon-x"></use>
       </svg>
     </button>
     <div class="header-menu" data-menu>
       <nav class="navigation">
         <ul class="navigation-list">
-          <li class="navigation-item"><a class="navigation-link">Услуги</a></li>
+          <li class="navigation-item">
+            <a class="navigation-link">Услуги</a>
+          </li>
           <li class="navigation-item">
             <a class="navigation-link">Портфолио</a>
           </li>
@@ -45,10 +50,18 @@
     <div class="header-block">
       <nav class="header-nav nav">
         <ul class="nav-list">
-          <li class="nav-item"><a class="nav-link">Услуги</a></li>
-          <li class="nav-item"><a class="nav-link">Портфолио</a></li>
-          <li class="nav-item"><a class="nav-link">Этапы</a></li>
-          <li class="nav-item"><a class="nav-link">Дизайнеры</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Услуги</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#examples">Портфолио</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#stages">Этапы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#discussion">Дизайнеры</a>
+          </li>
         </ul>
       </nav>
       <button class="button-example button-header">Заказать</button>

@@ -12,6 +12,7 @@ body {
   background-color: var(--white-color);
 }
 .button-example {
+  cursor: pointer;
   background: var(--green);
   text-transform: uppercase;
   color: var(--white-color);

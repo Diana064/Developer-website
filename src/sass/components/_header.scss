@@ -74,6 +74,7 @@
   }
 }
 .dot {
+  cursor: pointer;
   &-icon {
     width: 13px;
     height: 13px;
@@ -92,6 +93,9 @@
       gap: 38px;
     }
   }
+  &-link {
+    color: var(--white-color);
+  }
   &-item {
     @media screen and (min-width: 768px) {
       font-weight: 400;
@@ -109,6 +113,7 @@
   }
 }
 .button-header {
+  cursor: pointer;
   @media screen and (min-width: 768px) {
     padding: 0px 13px;
     font-size: 8px;
@@ -179,7 +184,12 @@
   .is-open .dot-svg {
     display: none;
   }
+  .is-open.header {
+    position: fixed;
+    background-color: var(--blue);
+  }
   .is-open.header-menu {
+    display: fixed;
     margin-top: 65px;
     background-color: var(--blue);
     z-index: 2;
